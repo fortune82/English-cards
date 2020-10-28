@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cards</title>
 </head>
+
 <body>
     <section>
-        <nav class="menu">
-                <ul>
-                    <!-- <li><a class="category personal">Personal Data</a></li>
+            <ul>
+                <!-- <li><a class="category personal">Personal Data</a></li>
                     <li><a class="category character">Character</a></li>
                     <li><a class="category profession">Profession</a></li> -->
-                    <li class="category personal">Personal Data (Личные данные)</li>
-                    <li class="category character">Character (Характер)</li>
-                    <li class="category profession">Profession (Профессии)</li>
-                    <li class="category body">Body parts and appearance (Части тела)</li>
-                    <li class="category clothes">Clothes (Одежда)</li>
-                    <li class="category routine">Daily Routine</li>
-                    <li class="category home">Home (Дом)</li>
-                    <li class="category city">City (Город)</li>
-                    <li class="category shopping">Shopping (Покупки)</li>
-                    <li class="category travelling">Travelling (Путешествие)</li>
-                    <li class="category health">Health (Здоровье)</li>
-                    <li class="category food">Food (Еда)</li>
-                    <li class="category abstract">Абстрактные существительные (abstract nouns)</li>
-                    <li class="category adjectives">Прилагательные (adjectives)</li>
-                    <li class="category temp">Наречия</li>
-                    <li class="category temp2">Предлоги</li>
-                </ul>
-           </nav>
+                <!-- <li class="category favoritesWords">Избранное</li>  --> <!-- Убрал, потому-что при обновлении страницы масив с избранными словами обнуляется  --> 
+                <li class="category personal" tabindex="1">Personal Data (Личные данные)</li>
+                <li class="category character" tabindex="2">Character (Характер)</li>
+                <li class="category profession" tabindex="3">Profession (Профессии)</li>
+                <li class="category body" tabindex="4">Body parts and appearance (Части тела)</li>
+                <li class="category clothes" tabindex="5">Clothes (Одежда)</li>
+                <li class="category routine" tabindex="6">Daily Routine</li>
+                <li class="category home" tabindex="7">Home (Дом)</li>
+                <li class="category city" tabindex="8">City (Город)</li>
+                <li class="category shopping" tabindex="9">Shopping (Покупки)</li>
+                <li class="category travelling" tabindex="10">Travelling (Путешествие)</li>
+                <li class="category health" tabindex="11">Health (Здоровье)</li>
+                <li class="category food" tabindex="12">Food (Еда)</li>
+                <li class="category abstract" tabindex="13">Абстрактные существительные (abstract nouns)</li>
+                <li class="category adjectives" tabindex="14">Прилагательные (adjectives)</li>
+                <li class="category adverbs" tabindex="15">Наречия</li>
+                <li class="category prepositions" tabindex="16">Предлоги</li>
+            </ul>
+        </nav>
         <div class="mainScreen">
             <div class="card">
-            <p class="word">Выберите категорию / choose category</p> 
+                <p class="word">Выберите категорию / choose category</p>
+                <!-- <button class="favorites">В закладки</button> --> <!-- Убрал, потому-что при обновлении страницы масив с избранными словами обнуляется  --> 
             </div>
             <div class="btn">
-                <button class="prew">Назад</button>
-                <button class="next">Вперед</button>
-                <button class="auto">Auto</button>
-                <button class="stopAuto">Cтоп</button>
-                <button class="randomWord">Случайная категория</button>
+                <button class="prew"  tabindex="17">Назад</button>
+                <button class="next"  tabindex="18">Вперед</button>
+                <button class="auto" tabindex="19">Auto</button>
+                <button class="stopAuto" tabindex="20">Cтоп</button>
+                <button class="randomWord" tabindex="21">Случайная категория</button>
             </div>
         </div>
         <div class="output">
             <div class="outputWindow"></div>
-            <button class="onOff">Включить/выключить</button>
+            <button class="onOff" tabindex="22">Включить/выключить</button>
         </div>
-      
-</section>
+
+    </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
